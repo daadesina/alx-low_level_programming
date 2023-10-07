@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	int my_word[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	putchar(my_word);
+	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
 	return (0);
 }
