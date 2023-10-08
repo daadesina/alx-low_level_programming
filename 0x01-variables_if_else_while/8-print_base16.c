@@ -8,14 +8,14 @@
 int main(void)
 {
 	int num = '0';
-	int alph = 'A';
+	int alph = 'a';
 
 	while (num <= '9')
 	{
 		putchar(num);
 		num++;
 	}
-	while (alph <= 'F')
+	while (alph <= 'f')
 	{
 		putchar(alph);
 		alph++;
