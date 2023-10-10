@@ -9,8 +9,6 @@
  */
 int _abs(int r)
 {
-	int r;
-
 	if (r >= '0')
 	{
 		printf("%d\n", r);
