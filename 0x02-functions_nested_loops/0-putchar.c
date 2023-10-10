@@ -8,6 +8,7 @@
  */
 int main(void)
 {
-	printf("_putchar\n");
+	char talk[] = "_putchar";
+	_putchar(talk);
 	return (0);
 }
