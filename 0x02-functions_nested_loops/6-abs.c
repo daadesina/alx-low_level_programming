@@ -7,7 +7,7 @@
  *
  * Return: The absolut number
  */
-int _abs(int)
+int _abs(int r)
 {
 	int r;
 
