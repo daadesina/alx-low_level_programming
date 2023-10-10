@@ -1,6 +1,11 @@
 #include "main.h"
 
-int main(void)
+/**
+ * main - Entry point
+ *
+ * Return: Alway 0 (Success)
+ */
+void print_alphabet(void)
 {
 	char a = 97;
 
@@ -10,5 +15,4 @@ int main(void)
 		a++;
 	}
 	_putchar('\n');
-	return (0);
 }
