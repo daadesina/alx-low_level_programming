@@ -15,8 +15,7 @@ int _abs(int r)
 	}
 	else
 	{
-		int n = ('-' * r);
+		int n = (-1 * r);
 		printf("%d\n", n);
 	}
-	return (0);
 }
