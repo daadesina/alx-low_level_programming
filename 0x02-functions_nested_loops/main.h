@@ -1,7 +1,2 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
-
-int _putchar(char *);
-
-#endif
+int _putchar(char c);
 

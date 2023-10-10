@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,6 +8,13 @@
 int main(void)
 {
 	char talk[] = "_putchar";
-	_putchar(talk);
+	int i = 0;
+
+	while(talk[i] != '\0')
+	{
+		_putchar(talk[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
