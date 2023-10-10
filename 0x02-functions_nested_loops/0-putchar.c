@@ -10,7 +10,7 @@ int main(void)
 	char talk[] = "_putchar";
 	int i = 0;
 
-	while(talk[i] != '\0')
+	while (talk[i] != '\0')
 	{
 		_putchar(talk[i]);
 		i++;
