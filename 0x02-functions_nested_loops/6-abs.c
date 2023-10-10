@@ -12,12 +12,12 @@ int _abs(int r)
 	if (r >= '0')
 	{
 		printf("%d", r);
-		return ('\n');
+		return (' ');
 	}
 	else
 	{
 		int n = (-1 * r);
-		printf("%d\n", n);
-		return ('\n');
+		printf("%d", n);
+		return (' ');
 	}
 }
