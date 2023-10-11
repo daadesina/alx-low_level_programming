@@ -8,26 +8,19 @@
  */
 void times_table(void)
 {
-	int a;
-	int count = 0;
+	int a = 0;
 
-	while (count <= 9)
+	while (a <= 12)
 	{
-		a = 0;
+		int b = 3 * a;
 
-		while (a <= 12)
+		printf("%d", b);
+		if (a <= 11)
 		{
-			int b = count * a;
-
-			printf("%d", b);
-			if (a <= 11)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			a++;
+			_putchar(',');
+			_putchar(' ');
 		}
-		count++;
-		_putchar('\n');
+		a++;
 	}
+	_putchar('\n');
 }
