@@ -14,12 +14,7 @@ void times_table(void)
 	{
 		int b = 3 * a;
 
-		printf("%d", b);
-		if (a < 12)
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
+		printf("%d, ", b);
 		a++;
 	}
 }
