@@ -10,10 +10,11 @@ void print_to_98(int n)
 {
 	int sum = 0;
 
-	while (n <= 98)
+	while (n <= 97)
 	{
-		sum = sum + n;
+		sum = n + 1;
 		printf("%d, ", sum);
 		n++;
 	}
+	printf("%d", sum);
 }
