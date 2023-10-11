@@ -8,13 +8,26 @@
  */
 void print_to_98(int n)
 {
-	int sum = 0;
-
-	while (n <= 97)
+	if (n < 98)
 	{
-		sum = n + 1;
-		printf("%d, ", sum);
-		n++;
+		while (n <= 97)
+		{
+			printf("%d, ", n);
+			n++;
+		}
+		printf("98");
 	}
-	printf("%d", sum);
+	else if (n == 98)
+	{
+		printf("0");
+	}
+	else
+	{
+		while (n >= 99)
+		{
+			printf("%d, ", n);
+			n--;
+		}
+		printf("98");
+	}
 }
