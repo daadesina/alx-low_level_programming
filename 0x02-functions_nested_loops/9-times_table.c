@@ -19,10 +19,15 @@ void times_table(void)
 		{
 			int b = count * a;
 
-			printf("%d, ", b);
+			printf("%d", b);
+			if (a <= 11)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			a++;
 		}
-		_putchar('\n');
 		count++;
+		_putchar('\n');
 	}
 }
