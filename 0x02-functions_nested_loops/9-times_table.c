@@ -18,8 +18,8 @@ void times_table(void)
 		while (a <= 8)
 		{
 			int b = count * a;
-	
-			printf("%d, ", b);
+			
+			printf("%d,  ", b);
 			a++;
 		}
 		c = count * 9;
