@@ -9,6 +9,7 @@
 void times_table(void)
 {
 	int a = 0;
+	int c;
 
 	while (a <= 11)
 	{
@@ -17,6 +18,6 @@ void times_table(void)
 		printf("%d, ", b);
 		a++;
 	}
-	int c = 3 * 12;
+	c = 3 * 12;
 	printf("%d\n", c);
 }
