@@ -13,12 +13,12 @@ int print_last_digit(int r)
 	{
 		int n = r % 10;
 
-		return (n);
-		printf("%d", n);
+		printf("%d%d", n, n);
+		return();
 	}
 	else
 	{
-		return (r);
-		printf("%d", r);
+		printf("%d%d", r, r);
+		return ();
 	}
 }
