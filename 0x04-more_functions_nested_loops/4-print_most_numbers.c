@@ -14,8 +14,13 @@ void print_most_numbers(void)
 		a++;
 
 		if (a == '2' || a == '4')
+		{
 			continue;
-		_putchar(a);
+		}
+		else
+		{
+			_putchar(a);
+		}
 	}
 
 	_putchar('\n');
