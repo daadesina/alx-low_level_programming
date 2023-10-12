@@ -2,7 +2,7 @@
 
 /**
  * _isupper - Entry point
- *
+ * @c: integer
  * Return: the result
  */
 int _isupper(int c)
