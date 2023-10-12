@@ -1,27 +1,26 @@
 #include <stdio.h>
 
 /**
- * largest_number - Entry point
- * @a: First number
- * @b: second number
- * @c: Third number
- * Return: Alway 0
+ * largest_number - print largest number
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
  */
+
 int largest_number(int a, int b, int c)
 {
-	int largest;
+	int largest = a;
 
-	if (a > b && a > c)
-	{
-		largest = a;
-	}
-	else if (b > a && b > c)
+	if (b >= a && b >= c)
 	{
 		largest = b;
+		return (largest);
 	}
-	else
+	else if (c >= a && c >= b)
 	{
 		largest = c;
+		return (largest);
 	}
 	return (largest);
 }
