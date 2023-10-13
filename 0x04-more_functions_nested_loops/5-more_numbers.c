@@ -22,5 +22,6 @@ void more_numbers(void)
 			a++;
 		}
 		_putchar('\n');
+		count ++;
 	}
 }
