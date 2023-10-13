@@ -8,10 +8,11 @@
 void more_numbers(void)
 {
 	int count = 0;
-	int a = 0;
+	int a;
 
 	while (count < 10)
 	{
+		a = 0;
 		while (a <= 14)
 		{
 			if (a > 9)
