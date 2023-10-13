@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_diagonal - Entry point
- * @n: integer
- * Return: Nothing to return
+ * print_diagonal - print diagonal line
+ * @n: number of lines to print
+ *
+ * Return: 0
  */
+
 void print_diagonal(int n)
 {
-	int a = 0;
-	int b;
+	int i, num;
 
 	if (n <= 0)
 	{
@@ -16,20 +17,14 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		while (a < n)
+		for (num = 0; num < n; num++)
 		{
-			_putchar('\\');
-			if (a < (n - 1))
+			for (i = 0; i < num; i++)
 			{
-				_putchar('\n');
-				b = 0;
-				while (b < (a + 1))
-				{
-					_putchar(' ');
-					b++;
-				}
+				_putchar(' ');
 			}
-			a++;
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 }
