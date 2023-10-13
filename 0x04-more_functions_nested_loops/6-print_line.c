@@ -2,7 +2,7 @@
 
 /**
  * print_line - Entry point
- *
+ * @n: an integer
  * Return: Nothing
  */
 void print_line(int n)
