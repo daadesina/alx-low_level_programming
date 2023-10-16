@@ -5,12 +5,12 @@
  * @s: a character
  * Return: The result
  */
-void print_rev(char *c)
+void print_rev(char *s)
 {
-	while (*c == '\0')
+	while (*s == '\0')
 	{
-		_putchar(*c);
-		c--;
+		_putchar(*s);
+		s--;
 	}
 	_putchar('\n');
 }
