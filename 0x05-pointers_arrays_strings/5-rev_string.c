@@ -12,15 +12,14 @@ void rev_string(char *s)
 	roll = 0;
 	while (s[roll] != '\0')
 	{
-		_putchar(s[roll]);
+		s[roll];
 		roll++;
 	}
-	_putchar('\n');
 	real = roll - 1;
 	while (real >= 0)
 	{
-		_putchar(s[real]);
+
+		s[real];
 		real--;
 	}
-	_putchar('\n');
 }
