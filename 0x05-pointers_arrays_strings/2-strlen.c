@@ -7,10 +7,11 @@
  */
 int _strlen(char *s)
 {
-	while (*s != '\0')
+	int myLenght = 0;
+	
+	while (s[myLenght])
 	{
-		_putchar(*s);
-		s++;
+		myLenght++;
 	}
-	_putchar('\n');
+	return (myLenght);
 }
