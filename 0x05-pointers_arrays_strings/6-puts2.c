@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * puts2 - Entry point
@@ -7,10 +8,14 @@
  */
 void puts2(char *str)
 {
-	while (*str != '\0')
+	int len, i;
+	
+	len = strlen(str);
+	i = 0;
+	while (i < len)
 	{
-		_putchar(*str);
-		str += 2;
+		_putchar(str[i]);
+		i += 2;
 	}
 	_putchar('\n');
 }
