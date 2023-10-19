@@ -1,34 +1,34 @@
 #include "main.h"
 
 /**
- * cap_string - Entry point
- * @s: a character
- * Return: the result
+ * cap_string - capitalizes everey word of a string
+ * @s: string to modify
+ *
+ * Return: the resulting string
  */
 char *cap_string(char *s)
 {
-	int go = 0;
-	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}' };
-	int goSpe = 0;
-	
-	while (s[go] != '\0')
+	int i, j;
+
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (go == 0 && s[go] >= 'a' && s[go] <= 'z')
+		if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+
+		for (j = 0; j < 13; j++)
 		{
-			s[go] = s[go] - 32;
-		}
-		while (goSpe <= 13)
-		{
-			if (s[go] == s[goSpe])
+			if (s[i] == spe[j])
 			{
-				if (s[go + 1] >= 'a' && s[go + 1] <= 'z')
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 				{
-					s[go + 1] = s[go + 1] - 32;
+					s[i + 1] -= 32;
 				}
 			}
-			goSpe++;
 		}
-		go++;
 	}
+
 	return (s);
 }
