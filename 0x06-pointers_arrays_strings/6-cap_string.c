@@ -8,7 +8,7 @@
 char *cap_string(char *s)
 {
 	int go = 0;
-	char spe[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}' };
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}' };
 	int goSpe = 0;
 	
 	while (s[go] != '\0')
@@ -23,7 +23,7 @@ char *cap_string(char *s)
 			{
 				if (s[go + 1] >= 'a' && s[go + 1] <= 'z')
 				{
-				s[go + 1] = s[go + 1] - 32;
+					s[go + 1] = s[go + 1] - 32;
 				}
 			}
 			goSpe++;
