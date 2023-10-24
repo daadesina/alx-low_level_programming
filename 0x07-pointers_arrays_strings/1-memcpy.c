@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _memcpy - Entry point
+ * *_memcpy - Entry point
  * @dest: a character
  * @src: a character
  * @n: an integer
@@ -10,6 +10,6 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	memcpy(dest, src, sizeof(n));
+	memcpy(dest, src, n);
 	return (dest);
 }
