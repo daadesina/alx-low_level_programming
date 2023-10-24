@@ -13,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 
 	if (i != NULL)
 	{
-		return (i);
+		return (*i);
 	}
 	else
 	{
