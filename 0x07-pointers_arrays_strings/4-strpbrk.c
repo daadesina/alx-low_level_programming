@@ -10,13 +10,15 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int i = strpbrk(s, accept);
+	int j;
 
 	if (i != 0)
 	{
-		return (*i);
+		j = *i;
 	}
 	else
 	{
-		return (NULL);
+		j = NULL;
 	}
+	return (j);
 }
