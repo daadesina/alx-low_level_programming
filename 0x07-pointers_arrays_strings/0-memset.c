@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <string.h>
 
 /**
  * _memset - Entry point
@@ -9,6 +9,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	memset(s, b, n);
-	return (s);
+	int i = 0;
+
+	memset(s, b, sizeof(char) * n);
+	while (i < n)
+	{
+		return (s[i]);
+		i++;
+	}
 }
