@@ -4,6 +4,7 @@
  * _pow_recursion - Entry point
  * @x: an integer
  * @y: another integer
+ * Return: the result
  */
 int _pow_recursion(int x, int y)
 {
